@@ -1,0 +1,141 @@
+body {
+  background-color: #C2CCCA;
+  font-family: Helvetica, Arial,sans-serif;
+  font-size: 11px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: -10px;
+  padding-top: 15px;
+}
+
+#titulo{
+  text-align: center;
+  margin-top: 10px;
+  }
+
+.logo {
+  background-color: #FF8C00;
+  width:100%;
+  height: 80px;
+  margin-top:0px;
+  text-align: center;
+  float:left;
+
+
+}
+
+.menu {
+  list-style:none;
+  padding: 0 20px;
+  margin:0;
+  float:left;
+  background-color: #4F4F4F;
+  width: 100%;
+  height:35px;;
+  font-size: 1.2em;
+
+ }
+
+.menu li{
+  float:left;
+  margin:0;
+  padding: 0 15px 0 0;
+  position: relative;
+
+}
+
+.menu li a {
+  padding:10px 5px;
+  color:white;
+  display: block;
+  text-decoration:none;
+  float: left;
+
+}
+
+.menu li a:hover{
+  background:#333;
+  color:#fff;
+
+}
+
+.menu li span {
+  width: 17px;
+  height: 35px;
+  float: left;
+  background: #4F4F4F url(arrow.png) no-repeat scroll right center;
+}
+
+
+.menu li ul.submenu {
+	list-style: none;
+	position: absolute;
+	left: 0; top: 35px;
+	background: #4F4F4F;
+  margin: 0; padding: 0;
+	display: none;
+	float: left;
+	border: 1px solid #111;
+}
+.menu li ul.submenu li{
+	margin: 0; padding: 0;
+	clear: both;
+	width: 170px;
+}
+html ul.menu li ul.submenu li a {
+	float: left;
+	width: 65px;
+	background: #4F4F4F url(arrow.png) no-repeat scroll right center;
+  width: 100%; ;
+	padding-left: 20px;
+}
+html ul.menu li ul.submenu li a:hover { /*--Hover effect for subnav links--*/
+	background: #4F4F4F;
+  width: 100%;
+}
+
+.container {
+  background-color: #C2CCCA;
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  float:inherit;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  border: 5px solid grey;
+
+}
+
+@media (max-height: 700px) {
+
+			.sticky {
+
+				position: relative;
+
+			}
+
+		}
+
+@media (max-width: 600px) {
+
+			.resize {
+
+				display: none;
+
+			}
+
+		}
+
+.monthly {
+    position: relative;
+    top:40%;
+    left:80%;
+    margin-top:70px;
+    margin-bottom:50px;
+
+}
