@@ -1,0 +1,12 @@
+	  declare @log varchar(max)
+	  select  @LOG=COALESCE(@LOG+',','' )+ c.acao
+	    from 
+		 checklist c
+
+
+		select t.NUMERO_MUDANCA,@log as ACAO
+			into resultado
+			from dbo.TESTE t
+			inner join checklist c
+			on t.face = c.face
+			select * from resultado
