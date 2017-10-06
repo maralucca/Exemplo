@@ -1,0 +1,11 @@
+select face,resultado_cubo,SUM( C.SLA) AS SLAF,
+		STUFF 
+		(
+			(SELECT ',' + ACAO 
+				FROM DBO.checklist R
+				WHERE R.resultado_CUBO = C.RESULTADO_CUBO
+				for XML PATH('')), 1, 1, '')
+ AS ACAO
+			INTO testeB
+			FROM DBO.CHECKLIST c
+			GROUP BY resultado_cubo,face
