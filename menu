@@ -1,0 +1,38 @@
+while true
+do
+echo -e "\n\n\n\t\t Exercicio Menu
+        [ 1 ] Lista diretorio
+        [ 2 ] Mostra usuario
+        [ 3 ] Imprime um arquivo
+        [ 4 ] Muda o diretorio corrente
+        [ 5 ] Remove um arquivo
+        [ 6 ] Sai do sistema
+        Digite a opcao desejada: \c"
+read opcao
+        if [ "$opcao" = "1" ]
+                then l -a
+        elif [ "$opcao" = "2" ]
+                then who
+        elif [ "$opcao" = "3" ]
+                then echo -e "\t\t Digite o nome de um arquivo para imprimir:\c"
+                        read arquivo
+                        cat $arquivo
+        elif [ "$opcao" = "4" ]
+                then cd etc
+        elif [ "$opcao" = "5" ]
+                then echo -e "\t\t Digite o nome do arquivo para remover:\c"
+                read arquivo1
+                rm $arquivo1
+        elif [ "$opcao" = "6" ]
+                then break
+        fi
+done
+~                                                                                                                                             
+~                                                                                                                                             
+~                                                                                                                                             
+~                                                                                                                                             
+~                                                                                                                                             
+~                                                                                                                                             
+~                                                                                                                                             
+~                                                                                                                                             
+Type  :quit<Enter>  to exit Vim
