@@ -1,0 +1,9 @@
+bitsadmin.exe /transfer "JobName" http://download.url/here.exe C:\destination\here.exe
+
+
+
+
+
+"C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\DTEXEC.exe" /File "C:\Users\maral\Documents\Visual Studio 2015\Projects\Curso\Projeto do Integration Services1\Projeto do Integration Services1\Package2.dtsx"
+
+pause
