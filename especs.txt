@@ -1,0 +1,29 @@
+Como é feito o cáculo do cubo?
+
+  para a face da qualidade uma vez que temos dois fatores sendo um positivo e um negativo optamos por: 
+   condição 1: caso não tenha valor de incidentes somamos o valor máximo do criterio de incidentes ao  valor da reputação já aplicado o seu peso.
+   condição 2: caso não tenha o valor de reputação utilizamos apenas o valor de incidentes multiplicado pelo seu peso
+   condição 3: caso tenha o valor tanto de reputação quanto o de incidentes , multiplicamos os dois pelos seus respectivos pesos e descontamos da 
+               reputação o valor dos incidentes.
+               
+  para a face de risco : aplicamos o peso a cada um dos critérios e somamos o valor final.
+  
+  para a face de impacto : aplicamos o peso a cada um dos critérios e somamos o valor final.
+  
+  
+  Calculo da nota final: temos 3 faces sendo que duas são os aspectos negativos da mudança e outro o aspecto positivo.
+  
+   Cada face tem  um peso que corresponde ao seu valor máximo na composição da nota.
+   como qualidade  o unico fator positivo nós pegamos o inverso dela ou seja a "falta de qualidade"
+    Feito isso nós somamos o valor de qualidade, risco com o seu peso aplicado, e impacto com seu peso aplicado.
+    Quanto maior a nota pior é, quanto menor melhor é.
+    
+    Como definimos as esteiras?
+    
+    baseado em uma nota de corte ou a mudança vai para uma esteira automatica ou manual.
+    
+   
+       
+  
+               
+               
