@@ -1,0 +1,39 @@
+codigo Edit
+
+Private Sub SeuBotao_Click()
+Dim db As Database
+Dim rs As Recordset
+Set db = CurrentDb
+Set rs = db.OpenRecordset("Select * from SuaTabela Where SeuCampo= " & Me.SeuCampoNoFormulario & "")
+rs.Edit
+rs("Campo1") = Me.Campo1NoForm.Value
+rs("Campo2") = Me.Campo2NoForm.Value
+rs("Campo3") = Me.Campo3NoForm.Value
+rs("Campo4") = Me.Campo4NoForm.Value
+rs.Update
+rs.Close
+db.Close
+End Sub
+
+
+
+codigo addnew
+
+
+Private Sub Comando17_Click()
+Dim db As Database
+Dim rs As Recordset
+Set db = CurrentDb
+Set rs = db.OpenRecordset("Tabela1")
+rs.AddNew
+rs("Teste") = Me.Combinação0.Value
+rs("Teste 1") = Me.Texto9.Value
+
+rs.Update
+rs.Close
+db.Close
+End Sub
+
+
+
+Set rs = db.OpenRecordset("Select * from SuaTabela Where SeuCampo2= " & Me.SeuCampo1NoFormulario & " AND SeuCampo2= " & Me.SeuCampo2NoFormulario & "")
